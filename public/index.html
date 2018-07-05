@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
 </head>
 <body>
-<div ng-controller="AppCtrl">
+<div class="appcontent" ng-controller="AppCtrl">
 		<div class="mainContent">	
 			 <div class="container">
 				<div class="header">
@@ -25,14 +25,14 @@
 								<textarea placeholder="Введите сообщение" class="form-control mesage" ng-model="contact.mesage"></textarea>
 							</div>
 							<div>
-								<button class="btn btn-primary" ng-click="addContact()">Добавить</button>
+								<button class="btn btn-primary" ng-click="addContact()">Add message</button>
 							</div>
 						</div>
 						<div class="repeatDate" ng-repeat="contact in chat">
 							<div class="mstime">Message time: {{contact.registr}}</div>
 							<div class="msauthor">Author: {{contact.name}}</div>
 							<div>{{contact.mesage}}</div>
-							<div><button class="btn btn-danger" ng-click="remove(contact._id)">Удалить</button></div>
+							<div><button class="btn btn-danger" ng-click="remove(contact._id)">Delete message</button></div>
 						</div>
 					</div>
 				</div>
