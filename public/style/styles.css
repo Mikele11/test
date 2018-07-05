@@ -66,5 +66,11 @@ textarea {
     color: DodgerBlue;
     margin-bottom: 5px;
 }
-
+.appcontent{
+    min-height: 100vh;
+}
+h1{
+    border-radius: 14px;
+    padding: 10px; 
+}
 
