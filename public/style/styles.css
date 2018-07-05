@@ -1,12 +1,10 @@
 body {
-    padding: 0;
+    padding:  0;
     margin: 0;
-}
-html{
-	width: 100%;
+    width: 100%;
 	height: 100vh;
 }
-body{
+html{
 	width: 100%;
 	height: 100vh;
 }
@@ -14,19 +12,26 @@ table{
 	width: 100%;
 	height: 100vh;
 }
-textarea {
-    width: 100%; 
-    height: 100%; 
-    resize: none; 
+@media screen and (min-device-width: 320px)and (max-device-width: 749px) {
+    textarea {
+        width: 100% !important; 
+        height: 150px !important; 
+        resize: none; 
+    }
 }
-.sharWidth {
-	width:100%;
+@media screen and (min-device-width: 750px)and (max-device-width: 1500px) {
+    textarea {
+        width: 100% !important; 
+        height: 200px !important; 
+        resize: none; 
+    }
 }
+
 .ng-binding {
 	background: rgb(230, 255, 255);
     border-radius: 14px;
     margin-bottom: 10px; 
-	padding: 10px;
+    padding: 10px;
 }
 .header {
     width: 100%;
@@ -73,4 +78,3 @@ h1{
     border-radius: 14px;
     padding: 10px; 
 }
-
