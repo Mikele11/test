@@ -4,6 +4,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 
 var refresh = function() {
   $http.get('/chat').success(function(response) {
+	  console.log(response);
     $scope.chat = response;
     $scope.chat.mesage = "";
   });
