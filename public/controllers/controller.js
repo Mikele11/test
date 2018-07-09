@@ -29,7 +29,8 @@ $scope.addContact = function() {
 		};
 
 		$scope.contact.registr=d2;
-		$scope.contact.name=$('input').val();
+		$scope.contact.name=$('.name').val();
+		$scope.contact.avatar=$('#picrscr').val();
 		$http.post('/chat', $scope.contact).success(function(response) {
 			refresh();
 		});
