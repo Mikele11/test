@@ -78,3 +78,34 @@ h1{
     border-radius: 14px;
     padding: 10px; 
 }
+
+#logoutBtn {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(62, 80, 173);
+  box-shadow: 0 -3px rgb(66, 100, 145) inset;
+  transition: 0.2s;
+} 
+#logoutBtn:hover { background: rgb(66, 100, 145); }
+#logoutBtn:active {
+  background: rgb(73, 110, 160);
+  box-shadow: 0 3px rgb(73, 110, 160) inset;
+}
+#loginBtn {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(62, 80, 173);
+  box-shadow: 0 -3px rgb(66, 100, 145) inset;
+  transition: 0.2s;
+} 
+#loginBtn:hover { background: rgb(66, 100, 145); }
+#loginBtn:active {
+  background: rgb(73, 110, 160);
+  box-shadow: 0 3px rgb(73, 110, 160) inset;
+}
