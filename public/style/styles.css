@@ -109,3 +109,11 @@ h1{
   background: rgb(73, 110, 160);
   box-shadow: 0 3px rgb(73, 110, 160) inset;
 }
+.useravatar{
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
