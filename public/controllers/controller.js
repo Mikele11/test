@@ -31,7 +31,11 @@ $scope.addContact = function() {
 
 		$scope.contact.registr=d2;
 		$scope.contact.name=$('.form-control.name').val();
-		$scope.contact.avatar=$('#picrscr').val();
+		if ($('#picrscr').val()==''){
+			$scope.contact.avatar='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPg-87YPJhgdeqQoAlUdgF60k6yi61LlpDtSXSqjWMVa9xbWVXQ';
+		}else{
+			$scope.contact.avatar=$('#picrscr').val();
+		}
 		$http.post('/chat', $scope.contact).success(function(response) {
 			refresh();
 		});
