@@ -102,7 +102,7 @@
 						</div>
 						<div class="repeatDate" ng-repeat="contact in chat">
 							<div class="mstime">Message time: {{contact.registr}}</div>
-							<div class="msauthor"><img src="{{ contact.avatar}}">Author: {{contact.name}}</div>
+							<div class="msauthor"><img class="useravatar" src="{{ contact.avatar}}">Author: {{contact.name}}</div>
 							<div>{{contact.mesage}}</div>
 							<div><button class="btn btn-danger" ng-click="remove(contact._id)">Delete message</button></div>
 						</div>
