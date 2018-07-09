@@ -30,7 +30,7 @@ $scope.addContact = function() {
 
 		$scope.contact.registr=d2;
 		$scope.contact.name=$('.form-control.name').val();
-		$scope.contact.avatar=$('#pictsrc').val();
+		$scope.contact.avatar=$('#picrscr').val();
 		$http.post('/chat', $scope.contact).success(function(response) {
 			refresh();
 		});
