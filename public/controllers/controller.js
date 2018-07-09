@@ -12,7 +12,6 @@ var refresh = function() {
 refresh();
 
 $scope.addContact = function() {
-  console.log($scope.contact);
   if ($('.form-control.name').val()==''){
 		alert('Enter name');
 	}else{
@@ -30,6 +29,7 @@ $scope.addContact = function() {
 		};
 
 		$scope.contact.registr=d2;
+		$scope.contact.name=$('input').val();
 		$http.post('/chat', $scope.contact).success(function(response) {
 			refresh();
 		});
