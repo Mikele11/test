@@ -4,7 +4,8 @@ var mongojs = require('mongojs');
 //var db = mongojs('chat', ['chat']);
 const MongoClient = require('mongodb').MongoClient;
 
-const MONGO_URL = 'mongodb://Mikele11:face112358@ds153413.mlab.com:53413/bookday';
+//const MONGO_URL = 'mongodb://Mikele11:face112358@ds153413.mlab.com:53413/bookday';
+const MONGO_URL = 'mongodb://Mikele11::face112358@ds133621.mlab.com:33621/myelekenchat';
 
 MongoClient.connect(MONGO_URL, function(err, db){  
   if (err) {
