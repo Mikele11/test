@@ -13,19 +13,14 @@ MongoClient.connect(MONGO_URL, function(err, db){
   }
 	//var db = client.db('mytestingdb');  
 	app.get('/chat', function (req, res) {
-	    console.log('All right');
 		db.collection("chat").find({}).toArray(function(error, doc) {
 			if (err) throw error;
-			console.log('+++++++');
-			console.log(doc);
-			console.log('+++++++');
 			res.send(doc);
 			//db.close();
 		});
 	});
 
 	app.post('/chat', function (req, res) {
-	  console.log(req.body);
 	  db.collection("chat").insertOne(req.body, function(err, doc) {
 		if (err) throw err;
 		res.json(doc);
